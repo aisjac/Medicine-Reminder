@@ -9,7 +9,7 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="410dp"
         android:layout_marginEnd="15dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +28,9 @@
 
     <ImageView
         android:id="@+id/imageViewNext"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/stepper_vector"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +38,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/skipButtonId"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/custom_promary_color"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape_with_background_color"
         android:text="Skip  Button"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineReminder">
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".AddMedicineBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVArificationActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

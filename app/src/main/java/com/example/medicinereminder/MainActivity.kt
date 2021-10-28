@@ -27,20 +27,20 @@ class MainActivity : AppCompatActivity() {
         onBoardingItemAdapter = OnBoardingItemAdapter(
             listOf(
                 OnBoardingItem(
-                    onBoardingHeader = "Medi Help",
+                    onBoardingHeader = "মেডি হেল্প",
                     onBoardingImage = R.drawable.onboardingimage_one,
-                    onBoardingTitle = "This is Title",
-                    onBoardingDescription = "This is Description"
+                    onBoardingTitle = "ভার্চুয়াল নার্স",
+                    onBoardingDescription = "আপনার স্বাস্থ্য এবং ওষুধ গুরুত্বপূর্ণ, এই অ্যাপটি আপনাকে আপনার নার্স এর মতনই খেয়াল রাখবে"
                 ),OnBoardingItem(
-                    onBoardingHeader = "Medi Help",
+                    onBoardingHeader = "মেডি হেল্প",
                     onBoardingImage = R.drawable.onboardingimage_two,
-                    onBoardingTitle = "This is Title",
-                    onBoardingDescription = "This is Description"
+                    onBoardingTitle = "সময় শর্তর্কীকরণ",
+                    onBoardingDescription = "এই অ্যাপটি আপনাকে মনে করিয়ে দেবে কখন কোন ধরনের ঔষধ আপনার প্রয়োজন"
                 ),OnBoardingItem(
-                    onBoardingHeader = "Medi Help",
+                    onBoardingHeader = "মেডি হেল্প",
                     onBoardingImage = R.drawable.onboardingimage_three,
-                    onBoardingTitle = "This is Title",
-                    onBoardingDescription = "This is Description"
+                    onBoardingTitle = "আপনার পরিবারের যত্ন নিন",
+                    onBoardingDescription = "এর সাহায্যে আপনি কেবল নিজেরই যত্ন নিতে পারবেন না, আপনার পরিবারের অন্যান্য সদস্যদেরও যত্ন নিতে পারবেন"
                 ),
             ))
         val onBoardingViewPager = findViewById<ViewPager2>(R.id.viewPager2)

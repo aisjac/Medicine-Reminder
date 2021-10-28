@@ -4,16 +4,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/custom_promary_color"
+    android:background="@drawable/splash_screen"
     tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:padding="10dp"
+        android:text="মেডি হেল্প"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="364dp"
+        android:layout_height="400dp"
         android:background="@drawable/login_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="343dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="লগ ইন করুন"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneTextETLayoutId"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:elevation="25dp"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/phoneEmailEtId"
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_shape__white_and_lessradious"
+                    android:hint="ফোন নম্বর"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passTextETLayoutId"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:elevation="25dp"
+                app:passwordToggleEnabled="true"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/passEmailEtId"
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_shape__white_and_lessradious"
+                    android:hint="পাসওয়ার্ড"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgotPasswordTVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="পাসওয়ার্ড ভুলে গেছেন?"
+                android:textColor="@color/gray"
+                android:layout_gravity="right"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signInButtonId"
+                android:layout_width="130dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_shape_with_background_color"
+                android:text="সাইন ইন"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewNext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="অথবা"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/fb"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edittext_shape_with_background_color"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tweeter"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="একাউন্ট নেই?"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/signUpKorunTVId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সাইন আপ করুন"
+                    android:textColor="@color/custom_promary_color"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
