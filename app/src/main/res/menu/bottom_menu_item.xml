@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Item"
+        android:icon="@drawable/home_bottom_menu_item"/>
+    <item
+        android:id="@+id/medicineFragment"
+        android:title="Item"
+        android:icon="@drawable/medicine_bottom_menu_item"/>
+    <item
+        android:id="@+id/trackerFragment"
+        android:title="Item"
+        android:icon="@drawable/tracker_bottom_menu_item"/>
+    <item
+        android:id="@+id/reportFragment"
+        android:title="Item"
+        android:icon="@drawable/report_bottom_menu_item"/>
+    <item
+        android:id="@+id/othersFragment"
+        android:title="Item"
+        android:icon="@drawable/others_bottom_menu_item"/>
+</menu>

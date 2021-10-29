@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynavhost"
+    app:startDestination="@id/medicineFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.medicinereminder.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.medicinereminder.MedicineFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" />
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.example.medicinereminder.TrackerFragment"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.medicinereminder.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.example.medicinereminder.OthersFragment"
+        android:label="fragment_others"
+        tools:layout="@layout/fragment_others" />
+</navigation>
