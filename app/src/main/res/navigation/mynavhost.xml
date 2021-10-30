@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mynavhost"
-    app:startDestination="@id/medicineFragment">
+    app:startDestination="@id/addMedicineStepOneFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -30,4 +30,36 @@
         android:name="com.example.medicinereminder.OthersFragment"
         android:label="fragment_others"
         tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/addMedicineStepOneFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepOneFragment"
+        android:label="fragment_add_medicine_step_one"
+        tools:layout="@layout/fragment_add_medicine_step_one">
+        <action
+            android:id="@+id/action_addMedicineStepOneFragment_to_addMedicineStepTwoFragment"
+            app:destination="@id/addMedicineStepTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineStepTwoFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepTwoFragment"
+        android:label="fragment_add_medicine_step_two"
+        tools:layout="@layout/fragment_add_medicine_step_two" >
+        <action
+            android:id="@+id/action_addMedicineStepTwoFragment_to_addMedicineStepThreeFragment"
+            app:destination="@id/addMedicineStepThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineStepThreeFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepThreeFragment"
+        android:label="fragment_add_medicine_step_three"
+        tools:layout="@layout/fragment_add_medicine_step_three" >
+        <action
+            android:id="@+id/action_addMedicineStepThreeFragment_to_addMedicineFinalStepFragment"
+            app:destination="@id/addMedicineFinalStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineFinalStepFragment"
+        android:name="com.example.medicinereminder.AddMedicineFinalStepFragment"
+        android:label="fragment_add_medicine_final_step"
+        tools:layout="@layout/fragment_add_medicine_final_step" />
 </navigation>

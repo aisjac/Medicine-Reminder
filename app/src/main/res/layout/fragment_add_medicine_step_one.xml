@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicineStepOneFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/custom_promary_color" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/upper_round_shape"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:elevation="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="নতুন ঔষধ সংযুক্ত করুন"
+                android:textSize="20sp"
+                android:layout_marginBottom="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="ঔষধের প্রকারভেদ" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp">
+
+
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ট্যাবলেট"
+                        android:clickable="true"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ক্যাপসুল"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="সিরাপ"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ড্রপ"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ইনজেকশন"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ক্রিম"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/custom_promary_color" />
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ইনহেলার"
+                        android:textColor="@color/custom_promary_color" />
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="পিল"
+                        android:textColor="@color/custom_promary_color" />
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phoneTextETLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    android:inputType="textPersonName"
+                    app:boxStrokeWidthFocused="0dp">
+
+                    <EditText
+                        android:id="@+id/phoneEmailEtId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ঔষধের নাম"
+                        android:textSize="15sp"
+                        android:background="@color/white"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="ঔষধের আইকন" />
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/tablet_icon"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/capsul_icon"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/sirap_icon"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/drop_icon"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/cream_icon"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/injection_icon"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/inhelar_icon"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:src="@drawable/pill_icon"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="কালার" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="58dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#C2FAD5"/>
+
+                    <View
+                        android:layout_width="58dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FBB2CF"/>
+                    <View
+                        android:layout_width="58dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#ABE1FD"/>
+                    <View
+                        android:layout_width="58dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FABBA9"/>
+                    <View
+                        android:layout_width="58dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FCE9AE"/>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/textView6stepOneFragmentTVId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="পরবর্তী"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

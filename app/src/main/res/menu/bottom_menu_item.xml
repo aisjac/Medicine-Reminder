@@ -7,7 +7,7 @@
         android:title="Item"
         android:icon="@drawable/home_bottom_menu_item"/>
     <item
-        android:id="@+id/medicineFragment"
+        android:id="@+id/addMedicineStepOneFragment"
         android:title="Item"
         android:icon="@drawable/medicine_bottom_menu_item"/>
     <item
