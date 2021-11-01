@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item>
         <shape>
             <solid
@@ -8,7 +9,7 @@
                 android:color="@color/custom_promary_color"
                 android:width="1dp"/>
             <corners
-                android:radius="5dp"/>
+                android:radius="10dp"/>
         </shape>
     </item>
 

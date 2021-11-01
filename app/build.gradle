@@ -31,7 +31,7 @@ android {
     }
 
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
@@ -51,4 +51,11 @@ dependencies {
 
     //Pinview for otp
     implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+    implementation 'com.maxkeppeler.sheets:core:2.2.6'
+
+    //chips
+    implementation 'com.robertlevonyan.view:MaterialChipView:3.0.2'
+
+
 }
