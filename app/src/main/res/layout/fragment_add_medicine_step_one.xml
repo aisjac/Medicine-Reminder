@@ -69,9 +69,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
         android:background="@drawable/upper_round_shape"
+        android:elevation="25dp"
         android:orientation="vertical"
         android:padding="15dp"
-        android:elevation="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout2"
@@ -88,9 +88,9 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
                 android:text="নতুন ঔষধ সংযুক্ত করুন"
                 android:textSize="20sp"
-                android:layout_marginBottom="40dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -108,80 +108,82 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
                     android:padding="5dp">
-
 
 
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
+                        android:clickable="true"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ট্যাবলেট"
-                        android:clickable="true"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
 
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ক্যাপসুল"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
 
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="সিরাপ"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
 
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ড্রপ"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
 
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ইনজেকশন"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
 
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ক্রিম"
-                        android:layout_marginEnd="5dp"
                         android:textColor="@color/custom_promary_color" />
+
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ইনহেলার"
                         android:textColor="@color/custom_promary_color" />
+
                     <TextView
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
@@ -192,11 +194,9 @@
                         android:textColor="@color/custom_promary_color" />
 
 
-
                 </LinearLayout>
 
             </HorizontalScrollView>
-
 
 
             <LinearLayout
@@ -209,18 +209,18 @@
                     android:id="@+id/phoneTextETLayoutId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeWidth="0dp"
                     android:inputType="textPersonName"
+                    app:boxStrokeWidth="0dp"
                     app:boxStrokeWidthFocused="0dp">
 
                     <EditText
                         android:id="@+id/phoneEmailEtId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="ঔষধের নাম"
-                        android:textSize="15sp"
                         android:background="@color/white"
-                        android:inputType="textPersonName" />
+                        android:hint="ঔষধের নাম"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -242,7 +242,6 @@
                 android:text="ঔষধের আইকন" />
 
 
-
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -256,61 +255,63 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:padding="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/tablet_icon"/>
+                        android:padding="5dp"
+                        android:src="@drawable/tablet_icon" />
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:padding="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/capsul_icon"/>
+                        android:padding="5dp"
+                        android:src="@drawable/capsul_icon" />
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:padding="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/sirap_icon"/>
+                        android:padding="5dp"
+                        android:src="@drawable/sirap_icon" />
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:padding="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/drop_icon"/>
+                        android:padding="5dp"
+                        android:src="@drawable/drop_icon" />
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:padding="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/cream_icon"/>
+                        android:padding="5dp"
+                        android:src="@drawable/cream_icon" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/injection_icon" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/inhelar_icon" />
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="40dp"
                         android:padding="5dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/injection_icon"/>
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:padding="5dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/inhelar_icon"/>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:padding="5dp"
-                        android:src="@drawable/pill_icon"/>
-
-
+                        android:src="@drawable/pill_icon" />
 
 
                 </LinearLayout>
 
 
             </HorizontalScrollView>
-
 
 
             <TextView
@@ -334,37 +335,37 @@
                         android:layout_width="58dp"
                         android:layout_height="41dp"
                         android:layout_marginRight="20dp"
-                        android:background="#C2FAD5"/>
+                        android:background="#C2FAD5" />
 
                     <View
                         android:layout_width="58dp"
                         android:layout_height="41dp"
                         android:layout_marginRight="20dp"
-                        android:background="#FBB2CF"/>
+                        android:background="#FBB2CF" />
+
                     <View
                         android:layout_width="58dp"
                         android:layout_height="41dp"
                         android:layout_marginRight="20dp"
-                        android:background="#ABE1FD"/>
+                        android:background="#ABE1FD" />
+
                     <View
                         android:layout_width="58dp"
                         android:layout_height="41dp"
                         android:layout_marginRight="20dp"
-                        android:background="#FABBA9"/>
+                        android:background="#FABBA9" />
+
                     <View
                         android:layout_width="58dp"
                         android:layout_height="41dp"
                         android:layout_marginRight="20dp"
-                        android:background="#FCE9AE"/>
+                        android:background="#FCE9AE" />
 
 
                 </LinearLayout>
 
 
             </HorizontalScrollView>
-
-
-
 
 
         </LinearLayout>
@@ -381,5 +382,6 @@
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
