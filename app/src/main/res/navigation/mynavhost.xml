@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynavhost"
+    app:startDestination="@id/addMedicineStepOneFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.medicinereminder.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.medicinereminder.MedicineFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" />
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.example.medicinereminder.TrackerFragment"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.medicinereminder.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.example.medicinereminder.OthersFragment"
+        android:label="fragment_others"
+        tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/addMedicineStepOneFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepOneFragment"
+        android:label="fragment_add_medicine_step_one"
+        tools:layout="@layout/fragment_add_medicine_step_one">
+        <action
+            android:id="@+id/action_addMedicineStepOneFragment_to_addMedicineStepTwoFragment"
+            app:destination="@id/addMedicineStepTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineStepTwoFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepTwoFragment"
+        android:label="fragment_add_medicine_step_two"
+        tools:layout="@layout/fragment_add_medicine_step_two" >
+        <action
+            android:id="@+id/action_addMedicineStepTwoFragment_to_addMedicineStepThreeFragment"
+            app:destination="@id/addMedicineStepThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineStepThreeFragment"
+        android:name="com.example.medicinereminder.AddMedicineStepThreeFragment"
+        android:label="fragment_add_medicine_step_three"
+        tools:layout="@layout/fragment_add_medicine_step_three" >
+        <action
+            android:id="@+id/action_addMedicineStepThreeFragment_to_addMedicineFinalStepFragment"
+            app:destination="@id/addMedicineFinalStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineFinalStepFragment"
+        android:name="com.example.medicinereminder.AddMedicineFinalStepFragment"
+        android:label="fragment_add_medicine_final_step"
+        tools:layout="@layout/fragment_add_medicine_final_step" />
+</navigation>
