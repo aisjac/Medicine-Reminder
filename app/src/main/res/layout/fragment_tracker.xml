@@ -92,13 +92,13 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:clickable="true"
+                        android:focusable="true"
                         android:padding="5dp"
                         android:text="ট্যাবলেট"
                         android:textColor="@color/custom_promary_color"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:focusable="true" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/textView16"
@@ -107,6 +107,7 @@
                         android:layout_marginStart="40dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:clickable="true"
+                        android:focusable="true"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ট্যাবলেট"
@@ -114,8 +115,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView5"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        android:focusable="true" />
+                        app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -124,6 +124,7 @@
                         android:layout_marginStart="40dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:clickable="true"
+                        android:focusable="true"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ট্যাবলেট"
@@ -131,8 +132,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView16"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        android:focusable="true" />
+                        app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
                         android:layout_width="65dp"
@@ -140,6 +140,7 @@
                         android:layout_marginStart="40dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:clickable="true"
+                        android:focusable="true"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="ট্যাবলেট"
@@ -149,8 +150,7 @@
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toEndOf="@+id/textView15"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        android:focusable="true" />
+                        app:layout_constraintVertical_bias="0.0" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -192,18 +192,20 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginStart="10dp"
-                        android:text="দুপুর" />
+                        android:background="@drawable/separation_shape"
+                        android:gravity="center"
+                        android:text="দুপুর"
+                        android:textColor="@color/white" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="10dp"
-                        android:background="@color/gray" />
+                        android:background="@color/custom_promary_color" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
