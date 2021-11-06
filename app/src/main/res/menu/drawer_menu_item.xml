@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Item" />
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/capsul_icon"
+            android:title="ঔষধের সময়সূচি" />
+        <item
+            android:icon="@drawable/stethoscope"
+            android:title="মেডিকেল এপয়েন্টমেন্ট" />
+        <item
+            android:icon="@drawable/helth_checkup_icon"
+            android:title="হেলথ চেকআপ" />
+        <item
+            android:icon="@drawable/vaccine_inject_icon"
+            android:title="ভ্যাকসিন" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="About Settings">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:icon="@drawable/settings_icon"
+                        android:title="একাউন্ট এবং সেটিংস" />
+                    <item
+                        android:icon="@drawable/about_us_icon"
+                        android:title="আমাদের সম্পর্কে" />
+                    <item
+                        android:icon="@drawable/rules_and_regilation_icon"
+                        android:title=" গোপনীয়তা এবং শর্তাবলী" />
+                    <item
+                        android:icon="@drawable/logout_icon"
+                        android:title="লগ আউট" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
 </menu>

@@ -19,7 +19,7 @@
         android:title="চেকআপ"
         android:icon="@drawable/report_bottom_menu_item"/>
     <item
-        android:id="@+id/othersFragment"
+        android:id="@+id/vaccineHomeFragment"
         android:title="অন্যান্য"
         android:icon="@drawable/others_bottom_menu_item"/>
 </menu>

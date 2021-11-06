@@ -22,5 +22,12 @@
 
     <color name="gray">#EBEBEB</color>
 
+    // membership Color
+    <color name="one">#008081</color>
+    <color name="two">#FE8558</color>
+    <color name="three">#EB2525</color>
+    <color name="four">#895ED1</color>
+
+
 
 </resources>

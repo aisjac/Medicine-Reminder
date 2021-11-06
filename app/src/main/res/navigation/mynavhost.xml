@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.medicinereminder.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_membershipPlanFragment"
+            app:destination="@id/membershipPlanFragment" />
+    </fragment>
     <fragment
         android:id="@+id/medicineFragment"
         android:name="com.example.medicinereminder.MedicineFragment"
@@ -62,4 +66,23 @@
         android:name="com.example.medicinereminder.AddMedicineFinalStepFragment"
         android:label="fragment_add_medicine_final_step"
         tools:layout="@layout/fragment_add_medicine_final_step" />
+    <fragment
+        android:id="@+id/vaccineHomeFragment"
+        android:name="com.example.medicinereminder.VaccineHomeFragment"
+        android:label="fragment_vaccine_home"
+        tools:layout="@layout/fragment_vaccine_home" >
+        <action
+            android:id="@+id/action_vaccineHomeFragment_to_vaccineAddFragment"
+            app:destination="@id/vaccineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipPlanFragment"
+        android:name="com.example.medicinereminder.MembershipPlanFragment"
+        android:label="fragment_membership_plan"
+        tools:layout="@layout/fragment_membership_plan" />
+    <fragment
+        android:id="@+id/vaccineFragment"
+        android:name="com.example.medicinereminder.VaccineFragment"
+        android:label="fragment_vaccine_add"
+        tools:layout="@layout/fragment_vaccine_add" />
 </navigation>
