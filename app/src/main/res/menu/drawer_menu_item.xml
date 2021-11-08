@@ -3,15 +3,19 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/homeFragment"
             android:icon="@drawable/capsul_icon"
             android:title="ঔষধের সময়সূচি" />
         <item
+            android:id="@+id/appointmentFragment"
             android:icon="@drawable/stethoscope"
             android:title="মেডিকেল এপয়েন্টমেন্ট" />
         <item
+            android:id="@+id/reportFragment"
             android:icon="@drawable/helth_checkup_icon"
             android:title="হেলথ চেকআপ" />
         <item
+            android:id="@+id/vaccineHomeFragment"
             android:icon="@drawable/vaccine_inject_icon"
             android:title="ভ্যাকসিন" />
 
@@ -23,12 +27,15 @@
             <menu>
                 <group android:checkableBehavior="single">
                     <item
+                        android:id="@+id/accountAndSettingsFragment"
                         android:icon="@drawable/settings_icon"
                         android:title="একাউন্ট এবং সেটিংস" />
                     <item
+                        android:id="@+id/aboutUsFragment"
                         android:icon="@drawable/about_us_icon"
                         android:title="আমাদের সম্পর্কে" />
                     <item
+                        android:id="@+id/termsAndConditionsFragment"
                         android:icon="@drawable/rules_and_regilation_icon"
                         android:title=" গোপনীয়তা এবং শর্তাবলী" />
                     <item
