@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAppointmentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center_horizontal"
+                android:text="আমি" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="বাবা" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="দাদি" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_primary_background_obal"
+            android:clickable="true"
+            android:src="@drawable/add_vector_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toEndOf="@+id/chipGroup2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.521" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/upper_round_shape"
+        android:elevation="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="মেডিকেল এপয়েন্টমেন্ট"
+                android:textColor="@color/custom_promary_color"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phoneTextETLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp">
+
+                    <EditText
+                        android:id="@+id/phoneEmailEtId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="ঔষধের নাম"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="ঔষধের নাম"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:hint="এপয়েন্টমেন্ট তারিখ"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="১৬ জুলাই,২০২১" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:text="(সকাল ৬:৪৫)" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_date_range_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="এপয়েন্টমেন্ট সতর্কবাণী"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="1-August-2021" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/textViewStepTwoFragmentTVId"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="সেভ"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
