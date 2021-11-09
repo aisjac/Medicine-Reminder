@@ -101,11 +101,11 @@
 
 
                 <Spinner
+                    android:id="@+id/vaccineNameSpinnerId"
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_custom_primary_color_rounded_border" />
+                    android:layout_weight="1" />
 
 
             </LinearLayout>
@@ -127,12 +127,11 @@
 
 
                 <Spinner
+                    android:id="@+id/vaccineCenterNameSpinnerId"
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_custom_primary_color_rounded_border" />
-
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -142,12 +141,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:orientation="horizontal"
-                android:weightSum="4">
+                android:weightSum="5">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:padding="5dp"
                     android:text="তারিখ" />
 
@@ -159,26 +158,24 @@
                     android:weightSum="3">
 
                     <Spinner
-                        android:id="@+id/addMedicineNumberSpinnerId"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/addVaccineDaySpinnerId"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_custom_primary_color_rounded_border" />
+                        android:layout_weight="1"/>
 
                     <Spinner
-                        android:id="@+id/addMedicineDMYSpinnerId"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/addVaccineMonthSpinnerId"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_custom_primary_color_rounded_border" />
+                        android:layout_weight="1"/>
 
                     <Spinner
-                        android:layout_width="wrap_content"
+                        android:id="@+id/addVaccineYearSpinnerId"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_custom_primary_color_rounded_border" />
+                        android:layout_weight="1" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -211,13 +208,14 @@
                     android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/starting_date_vaccine_TVId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="7-jun-2021" />
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/starting_date_vaccine_ImgId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -254,13 +252,14 @@
                     android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/ending_date_vaccine_TVId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="7-jun-2021" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/ending_date_vaccine_ImgId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

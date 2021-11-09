@@ -73,7 +73,7 @@
         tools:layout="@layout/fragment_vaccine_home" >
         <action
             android:id="@+id/action_vaccineHomeFragment_to_vaccineAddFragment"
-            app:destination="@id/vaccineFragment" />
+            app:destination="@id/addVaccineFragment" />
     </fragment>
     <fragment
         android:id="@+id/membershipPlanFragment"
@@ -81,8 +81,8 @@
         android:label="fragment_membership_plan"
         tools:layout="@layout/fragment_membership_plan" />
     <fragment
-        android:id="@+id/vaccineFragment"
-        android:name="com.example.medicinereminder.VaccineFragment"
+        android:id="@+id/addVaccineFragment"
+        android:name="com.example.medicinereminder.AddVaccineFragment"
         android:label="fragment_vaccine_add"
         tools:layout="@layout/fragment_vaccine_add" />
     <fragment

@@ -244,13 +244,14 @@
                     android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/adMedicineStepThreeTVId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="1-August-2021" />
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/addMedicineStepThreeImgId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

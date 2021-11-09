@@ -1,59 +1,77 @@
 package com.example.medicinereminder
 
+import android.R
+import android.annotation.SuppressLint
+import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import com.example.medicinereminder.databinding.FragmentVaccineAddBinding
+import java.util.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class AddVaccineFragment : Fragment() {
+   private var _binding:FragmentVaccineAddBinding?=null
 
-/**
- * A simple [Fragment] subclass.
- * Use the [VaccineFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class VaccineFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vaccine_add, container, false)
+        _binding = FragmentVaccineAddBinding.inflate(inflater, container, false)
+
+
+
+        val vaccineName = arrayOf("one","two","three")
+        val centerName = arrayOf("center one","center two","center three")
+        val day = arrayOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31")
+        val month = arrayOf("মাস","মাস","মাস")
+        val year = arrayOf("বছর","বছর","বছর")
+
+
+        binding.vaccineNameSpinnerId.adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item,vaccineName)
+        binding.vaccineCenterNameSpinnerId.adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item,centerName)
+        binding.addVaccineDaySpinnerId.adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item,day)
+        binding.addVaccineMonthSpinnerId.adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item,month)
+        binding.addVaccineYearSpinnerId.adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item,year)
+
+
+        val calender = Calendar.getInstance()
+        val yearC = calender.get(Calendar.YEAR)
+        val monthC = calender.get(Calendar.MONTH)
+        val dayC = calender.get(Calendar.DAY_OF_MONTH)
+
+        binding.startingDateVaccineImgId.setOnClickListener {
+
+            val dpd = DatePickerDialog(requireContext(), { view, year, monthOfYear, dayOfMonth ->
+                // Display Selected date in TextView
+                binding.startingDateVaccineTVId.text = "$dayOfMonth/$monthOfYear/$year"
+            }, yearC, monthC, dayC)
+            dpd.show()
+
+
+        }
+
+
+        binding.endingDateVaccineImgId.setOnClickListener {
+
+
+            val dpd = DatePickerDialog(requireContext(), { view, year, monthOfYear, dayOfMonth ->
+                // Display Selected date in TextView
+                binding.endingDateVaccineTVId.text = "$dayOfMonth/$monthOfYear/$year"
+            }, yearC, monthC, dayC)
+            dpd.show()
+
+
+        }
+
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment VaccineFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            VaccineFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }

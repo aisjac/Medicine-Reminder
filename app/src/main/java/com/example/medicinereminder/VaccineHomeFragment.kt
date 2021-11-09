@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.navigation.fragment.findNavController
 import com.example.medicinereminder.databinding.FragmentAddMedicineStepOneBinding
 import com.example.medicinereminder.databinding.FragmentVaccineHomeBinding
@@ -20,6 +21,9 @@ class VaccineHomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentVaccineHomeBinding.inflate(inflater,container,false)
+
+
+
 
         binding.addVaccineFabButtonId.setOnClickListener {
             findNavController().navigate(R.id.action_vaccineHomeFragment_to_vaccineAddFragment)

@@ -254,13 +254,14 @@
                     android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/addMedicineStartingTVd"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="7-jun-2021" />
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/addMedicineStartingImgId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -297,13 +298,14 @@
                     android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/addMedicineEndingTVId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="7-jun-2021" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/addMedicineEndingImgId"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

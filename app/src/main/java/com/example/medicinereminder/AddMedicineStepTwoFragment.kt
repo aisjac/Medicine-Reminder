@@ -1,5 +1,6 @@
 package com.example.medicinereminder
 
+import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import android.widget.Spinner
 import androidx.navigation.fragment.findNavController
 import com.example.medicinereminder.databinding.FragmentAddMedicineStepOneBinding
 import com.example.medicinereminder.databinding.FragmentAddMedicineStepTwoBinding
+import java.util.*
 
 class AddMedicineStepTwoFragment : Fragment() {
 
@@ -30,6 +32,34 @@ class AddMedicineStepTwoFragment : Fragment() {
 
         binding.addMedicineNumberSpinnerId.adapter = ArrayAdapter(requireContext(),android.R.layout.simple_spinner_item,options)
         binding.addMedicineDMYSpinnerId.adapter = ArrayAdapter(requireContext(),android.R.layout.simple_spinner_item,optionsDMY)
+
+
+        val calender = Calendar.getInstance()
+        val yearC = calender.get(Calendar.YEAR)
+        val monthC = calender.get(Calendar.MONTH)
+        val dayC = calender.get(Calendar.DAY_OF_MONTH)
+
+        binding.addMedicineStartingImgId.setOnClickListener {
+
+            val dpd = DatePickerDialog(requireContext(), { view, year, monthOfYear, dayOfMonth ->
+                // Display Selected date in TextView
+                binding.addMedicineStartingTVd.text = "$dayOfMonth/$monthOfYear/$year"
+            }, yearC, monthC, dayC)
+            dpd.show()
+
+
+        }
+
+        binding.addMedicineEndingImgId.setOnClickListener {
+
+            val dpd = DatePickerDialog(requireContext(), { view, year, monthOfYear, dayOfMonth ->
+                // Display Selected date in TextView
+                binding.addMedicineEndingTVId.text = "$dayOfMonth/$monthOfYear/$year"
+            }, yearC, monthC, dayC)
+            dpd.show()
+
+
+        }
 
 
 
