@@ -6,13 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.medicinereminder.databinding.FragmentHomeBinding
-import com.example.medicinereminder.databinding.FragmentVaccineHomeBinding
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding?=null
     private val binding get() = _binding!!
+
+    private var layoutManager:RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<HomeRecyclerAdapter.ViewHolder>? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +31,11 @@ class HomeFragment : Fragment() {
         }
 
 
+        layoutManager = LinearLayoutManager(requireContext())
+        adapter= HomeRecyclerAdapter()
+
+        binding.homeFragmentRecyclerViewId.layoutManager= layoutManager
+        binding.homeFragmentRecyclerViewId.adapter = adapter
 
 
 

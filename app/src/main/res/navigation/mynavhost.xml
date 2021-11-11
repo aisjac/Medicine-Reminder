@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_membershipPlanFragment"
             app:destination="@id/membershipPlanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addMedicineStepOneFragment"
+            app:destination="@id/addMedicineStepOneFragment" />
     </fragment>
     <fragment
         android:id="@+id/medicineFragment"
@@ -89,7 +92,11 @@
         android:id="@+id/appointmentFragment"
         android:name="com.example.medicinereminder.AppointmentFragment"
         android:label="fragment_appointment"
-        tools:layout="@layout/fragment_appointment_home" />
+        tools:layout="@layout/fragment_appointment_home" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutUsFragment"
         android:name="com.example.medicinereminder.AboutUsFragment"
@@ -108,7 +115,11 @@
         android:id="@+id/accountAndSettingsFragment"
         android:name="com.example.medicinereminder.AccountAndSettingsFragment"
         android:label="fragment_account_and_settings"
-        tools:layout="@layout/fragment_account_and_settings" />
+        tools:layout="@layout/fragment_account_and_settings" >
+        <action
+            android:id="@+id/action_accountAndSettingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
     <fragment
         android:id="@+id/contactUsFragment"
         android:name="com.example.medicinereminder.ContactUsFragment"
@@ -119,4 +130,13 @@
         android:name="com.example.medicinereminder.AddAppointmentFragment"
         android:label="fragment_add_appointment"
         tools:layout="@layout/fragment_add_appointment" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.medicinereminder.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.medicinereminder.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" />
 </navigation>

@@ -128,6 +128,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="addVaccineFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1492" />
+                            <option name="y" value="346" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="appointmentFragment">
                     <value>
                       <LayoutPositions>
@@ -135,6 +147,27 @@
                           <Point>
                             <option name="x" value="-1840" />
                             <option name="y" value="-1292" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_appointmentFragment_to_addAppointmentFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="changePasswordFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1574" />
+                            <option name="y" value="-914" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -157,12 +190,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1121" />
-                            <option name="y" value="-357" />
+                            <option name="x" value="-1526" />
+                            <option name="y" value="-369" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_homeFragment_to_addMedicineStepOneFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_homeFragment_to_membershipPlanFragment">
                               <value>
                                 <LayoutPositions />
@@ -190,8 +228,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2039" />
-                            <option name="y" value="-353" />
+                            <option name="x" value="-1306" />
+                            <option name="y" value="-14" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -204,6 +242,18 @@
                           <Point>
                             <option name="x" value="-784" />
                             <option name="y" value="-14" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="profileFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1833" />
+                            <option name="y" value="-760" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -245,25 +295,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="vaccineFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-1765" />
-                            <option name="y" value="348" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="vaccineHomeFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2056" />
-                            <option name="y" value="343" />
+                            <option name="x" value="-1848" />
+                            <option name="y" value="341" />
                           </Point>
                         </option>
                         <option name="myPositions">

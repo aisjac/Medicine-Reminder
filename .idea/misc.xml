@@ -32,12 +32,12 @@
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_otp_varification.xml" value="0.25" />
-        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_registration.xml" value="0.33" />
+        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_registration.xml" value="0.18" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/add_medicine_dialog.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/drawer_header.xml" value="0.33" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_about_us.xml" value="0.4264069264069264" />
-        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_account_and_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_account_and_settings.xml" value="0.25" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_add_appointment.xml" value="0.33" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_add_medicine_final_step.xml" value="0.33" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_add_medicine_step_one.xml" value="0.5" />
@@ -62,8 +62,9 @@
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/fragment_vaccine_home.xml" value="0.22" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/no_appointment.xml" value="0.18" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/onboarding_item_container.xml" value="0.22" />
-        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/popup_for_medicine.xml" value="0.22" />
-        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/remember_medicine_recyclerview_model.xml" value="0.33" />
+        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/popup_for_medicine.xml" value="0.33" />
+        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/remember_medicine_recyclerview_model.xml" value="0.25" />
+        <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/test_dialog.xml" value="0.22" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/test_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/layout/tracker_recyclerview_model.xml" value="0.33" />
         <entry key="..\:/Users/Project X Ltd/Desktop/Medicine-Reminder/app/src/main/res/menu/bottom_menu_item.xml" value="0.23157894736842105" />

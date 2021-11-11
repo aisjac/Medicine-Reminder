@@ -19,17 +19,17 @@
 
 
             <TextView
-                android:layout_width="65dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:text="সেটিংস"
                 android:textColor="@color/custom_promary_color"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <View
-                android:layout_width="60dp"
+                android:layout_width="80dp"
                 android:layout_height="2dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="2dp"
@@ -62,7 +62,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="একাউন্ট "
                     android:textColor="@color/custom_promary_color"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="এডিট প্রোফাইল"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -126,12 +126,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="চেঞ্জ পাসওয়ার্ড"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:id="@+id/changePasswordFromSettingsId"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/settings_right_arrow"
@@ -154,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:text="ফেইসবুক"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -200,7 +201,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="নোটিফিকেশন্স"
                     android:textColor="@color/custom_promary_color"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -234,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="App নোটিফিকেশন্স"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -265,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="ভাইব্রেশন"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -302,10 +303,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="ফেইসবুক পেজটি লাইক করুন
-"
+                        android:text="ফেইসবুক পেজটি লাইক করুন"
                         android:textColor="@color/custom_promary_color"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -328,7 +328,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="শেয়ার app"
                     android:textColor="@color/custom_promary_color"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -355,7 +355,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="লগ আউট"
                 android:textColor="@color/custom_promary_color"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

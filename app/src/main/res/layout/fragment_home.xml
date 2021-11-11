@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
     tools:context=".HomeFragment">
 
     <RelativeLayout
@@ -163,10 +162,96 @@
                     android:layout_marginTop="10dp"
                     android:background="@color/custom_promary_color" />
 
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:text="শনি"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="রবি"
+                        android:textColor="@color/custom_promary_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView151"
+                        app:layout_constraintHorizontal_bias="0.379"
+                        app:layout_constraintStart_toEndOf="@+id/textView51"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.523" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="সোম"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:text="মঙ্গল"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView161"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="বুধ"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView151"
+                        app:layout_constraintHorizontal_bias="0.379"
+                        app:layout_constraintStart_toEndOf="@+id/textView51"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.523" />
+
+                    <TextView
+                        android:id="@+id/textView151"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="বৃহস্পতি"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeFragmentRecyclerViewId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
