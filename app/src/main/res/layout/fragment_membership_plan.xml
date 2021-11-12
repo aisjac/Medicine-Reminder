@@ -12,408 +12,348 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/firstConstraintId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:singleLine="true">
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:gravity="center_horizontal"
-                    android:text="আমি" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="বাবা" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="দাদি" />
-
-
-            </com.google.android.material.chip.ChipGroup>
-
-
-            <ImageButton
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/custom_primary_background_obal"
-                android:clickable="true"
-                android:src="@drawable/add_vector_white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.881"
-                app:layout_constraintStart_toEndOf="@+id/chipGroup2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.521" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/txtViewId"
-            android:layout_width="150dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
             android:text="মেম্বারশিপ প্ল্যান"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/firstConstraintId" />
+            android:textStyle="bold" />
+
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat1"
-            android:layout_width="343dp"
-            android:layout_height="119dp"
-            android:background="@drawable/membership_for_one_month"
-            android:elevation="15dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginTop="25dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtViewId"
-            tools:layout_editor_absoluteY="25dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:id="@+id/linearLayoutCompat1"
+                android:layout_width="343dp"
+                android:layout_height="119dp"
+                android:background="@drawable/membership_for_one_month"
+                android:elevation="15dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtViewId"
+                tools:layout_editor_absoluteY="25dp">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="340dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal"
-                    android:weightSum="5">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="340dp"
                         android:layout_height="25dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="3"
-                        android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"
-                        android:textColor="@color/one"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
 
-                    <TextView
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="3"
+                            android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"
+                            android:textColor="@color/one"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/discount_tag_back_one"
+                            android:gravity="right"
+                            android:text="৩০% ডিসকাউন্ট"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="3dp"
-                        android:layout_weight="2"
-                        android:background="@drawable/discount_tag_back_one"
-                        android:gravity="right"
-                        android:text="৩০% ডিসকাউন্ট"
-                        android:textColor="@color/white" />
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/onetk" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:text="500"
+                            android:textColor="@color/one"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:backgroundTint="@color/one"
+                        android:text="ট্রাই করুন"
+                        android:textSize="10sp" />
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat2"
+                android:layout_width="343dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/membership_for_two_month"
+                android:elevation="15dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat1">
+
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/onetk" />
-
-                    <TextView
-                        android:layout_width="50dp"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="340dp"
                         android:layout_height="25dp"
-                        android:text="500"
-                        android:textColor="@color/one"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="3"
+                            android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"
+                            android:textColor="@color/two"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/discount_tag_back_two"
+                            android:gravity="right"
+                            android:text="৩০% ডিসকাউন্ট"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/twotk" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:text="500"
+                            android:textColor="@color/two"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:backgroundTint="@color/two"
+                        android:text="ট্রাই করুন"
+                        android:textSize="10sp" />
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <Button
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="15dp"
-                    android:backgroundTint="@color/one"
-                    android:text="ট্রাই করুন"
-                    android:textSize="10sp" />
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat2"
-            android:layout_width="343dp"
-            android:layout_height="119dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/membership_for_two_month"
-            android:elevation="15dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat1">
-
-
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:id="@+id/linearLayoutCompat3"
+                android:layout_width="343dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/membership_for_three_month"
+                android:elevation="15dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
+
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="340dp"
-                    android:layout_height="25dp"
-                    android:weightSum="5"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="340dp"
                         android:layout_height="25dp"
-                        android:layout_weight="3"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="15dp"
-                        android:textColor="@color/two"
-                        android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"/>
-                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="3"
+                            android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"
+                            android:textColor="@color/three"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/discount_tag_back_three"
+                            android:gravity="right"
+                            android:text="৩০% ডিসকাউন্ট"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginRight="3dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/discount_tag_back_two"
-                        android:gravity="right"
-                        android:text="৩০% ডিসকাউন্ট"/>
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/threetk" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:text="500"
+                            android:textColor="@color/three"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:backgroundTint="@color/three"
+                        android:text="ট্রাই করুন"
+                        android:textSize="10sp" />
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/twotk"/>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="25dp"
-                        android:text="500"
-                        android:textColor="@color/two"
-                        android:textStyle="bold"/>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <Button
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
-                    android:backgroundTint="@color/two"
-                    android:layout_marginLeft="15dp"
-                    android:text="ট্রাই করুন"
-                    android:textSize="10sp"/>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat3"
-            android:layout_width="343dp"
-            android:layout_height="119dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/membership_for_three_month"
-            android:elevation="15dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
-
-
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:id="@+id/linearLayoutCompat4"
+                android:layout_width="343dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/membership_for_four_month"
+                android:elevation="15dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="340dp"
-                    android:layout_height="25dp"
-                    android:weightSum="5"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="340dp"
                         android:layout_height="25dp"
-                        android:layout_weight="3"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="15dp"
-                        android:textColor="@color/three"
-                        android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"/>
-                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="3"
+                            android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"
+                            android:textColor="@color/four"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/discount_tag_back_four"
+                            android:gravity="right"
+                            android:text="৩০% ডিসকাউন্ট"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginRight="3dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/discount_tag_back_three"
-                        android:gravity="right"
-                        android:text="৩০% ডিসকাউন্ট"/>
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/fourtk" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:text="500"
+                            android:textColor="@color/four"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:backgroundTint="@color/four"
+                        android:text="ট্রাই করুন"
+                        android:textSize="10sp" />
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/threetk"/>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="25dp"
-                        android:text="500"
-                        android:textColor="@color/three"
-                        android:textStyle="bold"/>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <Button
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
-                    android:backgroundTint="@color/three"
-                    android:layout_marginLeft="15dp"
-                    android:text="ট্রাই করুন"
-                    android:textSize="10sp"/>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat4"
-            android:layout_width="343dp"
-            android:layout_height="119dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/membership_for_four_month"
-            android:elevation="15dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="340dp"
-                    android:layout_height="25dp"
-                    android:weightSum="5"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="25dp"
-                        android:layout_weight="3"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="15dp"
-                        android:textColor="@color/four"
-                        android:text="মেম্বারশিপ প্ল্যান ৩ মাসের জন্য"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginRight="3dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/discount_tag_back_four"
-                        android:gravity="right"
-                        android:text="৩০% ডিসকাউন্ট"/>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/fourtk"/>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="25dp"
-                        android:text="500"
-                        android:textColor="@color/four"
-                        android:textStyle="bold"/>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <Button
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
-                    android:backgroundTint="@color/four"
-                    android:layout_marginLeft="15dp"
-                    android:text="ট্রাই করুন"
-                    android:textSize="10sp"/>
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </ScrollView>

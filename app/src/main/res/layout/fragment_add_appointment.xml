@@ -124,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="ডাঃ শামীম"
+                        android:hint="নাম"
                         android:inputType="textPersonName"
                         android:textSize="15sp" />
 
@@ -157,7 +157,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="সিএমএইচ"
+                        android:hint="কেন্দ্র"
                         android:inputType="textPersonName"
                         android:textSize="15sp" />
 

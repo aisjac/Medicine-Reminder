@@ -85,9 +85,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+                    android:paddingLeft="32dp"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="25dp"
+                    android:orientation="horizontal">
 
 
                     <ImageView
@@ -102,7 +103,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -113,13 +114,14 @@
                             android:textStyle="bold" />
 
                         <androidx.appcompat.widget.LinearLayoutCompat
-                            android:layout_width="100dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -141,7 +143,7 @@
 
                             <LinearLayout
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -177,365 +179,378 @@
 
                 </LinearLayout>
 
-                <LinearLayout
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/upper_round_shape"
-                    android:elevation="25dp"
-                    android:orientation="vertical"
-                    android:padding="35dp">
-
+                    android:background="@drawable/upper_round_shape">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="25dp"
                         android:orientation="vertical">
 
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="25dp"
-                            android:padding="5dp">
+                            android:layout_height="match_parent"
+                            android:paddingLeft="32dp"
+                            android:paddingRight="32dp"
+                            android:paddingTop="30dp"
+                            android:orientation="vertical">
 
-                            <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup"
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                app:singleSelection="true">
+                                android:layout_marginBottom="10dp">
 
-
-                                <com.google.android.material.chip.Chip
-                                    android:layout_width="wrap_content"
+                                <com.google.android.material.chip.ChipGroup
+                                    android:id="@+id/chipGroup"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="true"
-                                    android:text="aisjac 1" />
-
-                                <com.google.android.material.chip.Chip
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:checked="true"
-                                    android:text="aisjac 2" />
-
-                                <com.google.android.material.chip.Chip
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:checked="true"
-                                    android:text="aisjac 3" />
+                                    app:singleSelection="true">
 
 
-                            </com.google.android.material.chip.ChipGroup>
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:text="aisjac 1" />
 
-                        </LinearLayout>
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:text="aisjac 2" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:padding="5dp"
-                            android:weightSum="4">
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:text="aisjac 3" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:text="শুরুর তারিখ" />
+
+                                </com.google.android.material.chip.ChipGroup>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/gray"/>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:background="@drawable/white_custom_primary_color_rounded_border"
+                                android:layout_marginBottom="18dp"
                                 android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="2">
+                                android:weightSum="4">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="1-August-2021" />
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="3"
+                                    android:text="শুরুর তারিখ" />
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
                                     android:layout_weight="1"
-                                    android:src="@drawable/ic_baseline_date_range_24" />
+                                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="1-August-2021" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                                </LinearLayout>
 
 
                             </LinearLayout>
 
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:padding="5dp"
-                            android:weightSum="4">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:text="শেষের তারিখ" />
-
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:background="@drawable/white_custom_primary_color_rounded_border"
+                                android:layout_marginBottom="18dp"
                                 android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="2">
+                                android:weightSum="4">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="1-August-2021" />
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:text="শেষের তারিখ" />
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
                                     android:layout_weight="1"
-                                    android:src="@drawable/ic_baseline_date_range_24" />
+                                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="1-August-2021" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                                </LinearLayout>
 
 
                             </LinearLayout>
 
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:padding="5dp"
-                            android:weightSum="3">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:text="সময়কাল" />
-
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:background="@drawable/white_custom_primary_color_rounded_border"
+                                android:layout_marginBottom="18dp"
                                 android:orientation="horizontal"
-                                android:padding="5dp">
+                                android:weightSum="3">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical"
+                                    android:text="সময়কাল" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="৪ মাস" />
+                                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="৪ মাস" />
 
 
 
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:weightSum="4">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="3"
-                                android:text="মক্রয়কৃত ঔষধের পরিমান" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:src="@drawable/ic_baseline_remove_24" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="10 mg" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
-                                android:layout_weight="1"
-                                android:src="@drawable/ic_baseline_add_24" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:weightSum="4">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="3"
-                                android:text="মঔষধ ক্রয় করতে হবে" />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="25dp"
-                                android:layout_weight="1"
-                                android:background="@color/gray"
-                                android:gravity="center"
-                                android:padding="3dp"
-                                android:text="20" />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="horizontal"
-                            android:padding="5dp"
-                            android:weightSum="4">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:text="ঔষুধের মজুদ সতর্কবাণী" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:background="@drawable/white_custom_primary_color_rounded_border"
-                                android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="2">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="1-August-2021" />
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:src="@drawable/ic_baseline_date_range_24" />
+                                </LinearLayout>
 
 
                             </LinearLayout>
 
 
-                        </LinearLayout>
-
-
-                        <LinearLayout
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="vertical"
-                            android:weightSum="4">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="15dp"
-                                android:layout_weight="3"
-                                android:text="মঔষধ সেবনে সতর্কীকরণ" />
-
                             <LinearLayout
-                                android:layout_width="wrap_content"
+
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@drawable/white_custom_primary_color_rounded_border"
-                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="18dp"
                                 android:orientation="horizontal"
-                                android:padding="5dp">
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:text="মক্রয়কৃত ঔষধের পরিমান" />
 
                                 <ImageView
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:layout_marginRight="2dp"
-                                    android:src="@drawable/ic_baseline_access_alarm_24" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/ic_baseline_remove_24" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="10 mg" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/ic_baseline_add_24" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="18dp"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:text="মঔষধ ক্রয় করতে হবে" />
 
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="25dp"
+                                    android:layout_weight="1"
                                     android:background="@color/gray"
                                     android:gravity="center"
-                                    android:layout_marginRight="2dp"
-                                    android:text="সকাল ৭টা" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:layout_marginRight="2dp"
-                                    android:text="(খাবারের আগে)" />
-
-                                <Switch
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+                                    android:padding="3dp"
+                                    android:text="20" />
 
 
                             </LinearLayout>
 
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="18dp"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:text="ঔষুধের মজুদ সতর্কবাণী" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="1-August-2021" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="45dp"
+                                android:orientation="vertical"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_weight="3"
+                                    android:text="মঔষধ সেবনে সতর্কীকরণ" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/white_custom_primary_color_rounded_border"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginRight="2dp"
+                                        android:src="@drawable/ic_baseline_access_alarm_24" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:background="@color/gray"
+                                        android:gravity="center"
+                                        android:layout_marginRight="2dp"
+                                        android:text="সকাল ৭টা" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_marginRight="2dp"
+                                        android:text="(খাবারের আগে)" />
+
+                                    <Switch
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                            <Button
+                                android:id="@+id/textView6stepFinalFragmentTVId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="পরবর্তী"
+                                android:textSize="14sp" />
+
+
+
                         </LinearLayout>
-
-
-
-                        <Button
-                            android:id="@+id/textView6stepFinalFragmentTVId"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="পরবর্তী"
-                            android:textSize="14sp" />
-
 
 
                     </LinearLayout>
 
+                </androidx.core.widget.NestedScrollView>
 
-                </LinearLayout>
 
 
             </LinearLayout>

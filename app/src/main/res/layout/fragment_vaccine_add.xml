@@ -6,286 +6,330 @@
     android:layout_height="match_parent"
     tools:context=".AddVaccineFragment">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="10dp"
-        android:paddingTop="20dp">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/chipGroup2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:singleLine="true">
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:gravity="center_horizontal"
-                android:text="আমি" />
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="বাবা" />
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="দাদি" />
-
-
-        </com.google.android.material.chip.ChipGroup>
-
-
-        <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/custom_primary_background_obal"
-            android:clickable="true"
-            android:src="@drawable/add_vector_white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.881"
-            app:layout_constraintStart_toEndOf="@+id/chipGroup2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.521" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/upper_round_shape"
-        android:elevation="25dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal"
-                android:padding="5dp"
-                android:weightSum="2">
-
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="40dp"
-                    android:text="ভ্যাকসিন নাম" />
-
-
-                <Spinner
-                    android:id="@+id/vaccineNameSpinnerId"
-                    android:layout_width="200dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal"
-                android:padding="5dp"
-                android:weightSum="2">
-
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="40dp"
-                    android:text="কেন্দ্র" />
-
-
-                <Spinner
-                    android:id="@+id/vaccineCenterNameSpinnerId"
-                    android:layout_width="200dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal"
-                android:weightSum="5">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="5dp"
-                    android:text="তারিখ" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <Spinner
-                        android:id="@+id/addVaccineDaySpinnerId"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"/>
-
-                    <Spinner
-                        android:id="@+id/addVaccineMonthSpinnerId"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"/>
-
-                    <Spinner
-                        android:id="@+id/addVaccineYearSpinnerId"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
-
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal"
-                android:padding="5dp"
-                android:weightSum="4">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="শুরুর তারিখ" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_custom_primary_color_rounded_border"
-                    android:orientation="horizontal"
-                    android:padding="5dp"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:id="@+id/starting_date_vaccine_TVId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="7-jun-2021" />
-
-                    <ImageView
-                        android:id="@+id/starting_date_vaccine_ImgId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_baseline_date_range_24" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp"
-                android:weightSum="4">
+                android:paddingLeft="10dp"
+                android:paddingTop="25dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="শেষের তারিখ" />
-
-                <LinearLayout
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_custom_primary_color_rounded_border"
-                    android:orientation="horizontal"
-                    android:padding="5dp"
-                    android:weightSum="2">
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:singleLine="true">
 
-                    <TextView
-                        android:id="@+id/ending_date_vaccine_TVId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="7-jun-2021" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="আমি" />
 
-                    <ImageView
-                        android:id="@+id/ending_date_vaccine_ImgId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_baseline_date_range_24" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="75dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="বাবা" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="দাদি" />
 
 
-                </LinearLayout>
+                </com.google.android.material.chip.ChipGroup>
 
 
-            </LinearLayout>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_primary_background_obal"
+                    android:clickable="true"
+                    android:src="@drawable/add_vector_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.881"
+                    app:layout_constraintStart_toEndOf="@+id/chipGroup2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.521" />
 
 
-            <Button
-                android:id="@+id/textViewStepTwoFragmentTVId"
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="10dp"
-                android:text="সেভ"
-                android:textSize="14sp" />
+                android:background="@drawable/upper_round_shape"
+                android:elevation="25dp"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
 
 
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ভ্যাকসিন সংযুক্ত করুন"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="50dp"
+                        android:textColor="@color/black"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="40dp"
+                            android:text="ভ্যাকসিন নাম" />
+
+
+                        <Spinner
+                            android:id="@+id/vaccineNameSpinnerId"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="40dp"
+                            android:text="কেন্দ্র" />
+
+
+                        <Spinner
+                            android:id="@+id/vaccineCenterNameSpinnerId"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="তারিখ" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Spinner
+                                android:id="@+id/addVaccineDaySpinnerId"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"/>
+
+                            <Spinner
+                                android:id="@+id/addVaccineMonthSpinnerId"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"/>
+
+                            <Spinner
+                                android:id="@+id/addVaccineYearSpinnerId"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:text="শুরুর তারিখ" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/starting_date_vaccine_TVId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="7-jun-2021" />
+
+                            <ImageView
+                                android:id="@+id/starting_date_vaccine_ImgId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="25dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:text="শেষের তারিখ" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/ending_date_vaccine_TVId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="7-jun-2021" />
+
+                            <ImageView
+                                android:id="@+id/ending_date_vaccine_ImgId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_date_range_24" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/textViewStepTwoFragmentTVId"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="সেভ"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
 
 
 </FrameLayout>

@@ -7,9 +7,10 @@
     android:background="#00FFFFFF"
     tools:context=".ReportFragment">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -21,8 +22,8 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="25dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:orientation="vertical">
 
 
@@ -73,24 +74,24 @@
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp">
+                    android:layout_marginBottom="30dp"
+                    android:scrollbars="none">
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:padding="5dp"
                         android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
+                            android:padding="5dp"
                             android:text="রক্তচাপ"
-                            android:padding="5dp"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -99,12 +100,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
-                            android:text="ডায়াবেটিস"
                             android:padding="5dp"
+                            android:text="ডায়াবেটিস"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -113,27 +114,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
-                            android:text="ডায়াবেটিস"
                             android:padding="5dp"
-                            android:textColor="@color/custom_promary_color"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:background="@drawable/edittext_shape__white_and_lessradious"
-                            android:clickable="true"
-                            android:gravity="center"
                             android:text="ডায়াবেটিস"
-                            android:padding="5dp"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -143,12 +129,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
-                            android:text="ডায়াবেটিস"
                             android:padding="5dp"
+                            android:text="ডায়াবেটিস"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -158,12 +144,26 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
-                            android:text="ডায়াবেটিস"
                             android:padding="5dp"
+                            android:text="ডায়াবেটিস"
+                            android:textColor="@color/custom_promary_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_shape__white_and_lessradious"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="ডায়াবেটিস"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -175,29 +175,31 @@
                 </HorizontalScrollView>
 
 
-
-
             </androidx.appcompat.widget.LinearLayoutCompat>
+
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="25dp"
                 android:background="@drawable/upper_round_shape"
+                android:elevation="25dp"
                 android:orientation="vertical">
+
 
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="25dp"
-                    android:orientation="vertical">
-
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:paddingTop="32dp"
+                    android:paddingRight="32dp">
 
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
                         android:orientation="horizontal">
 
 
@@ -218,30 +220,25 @@
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:background="@drawable/custom_primary_background_obal"
+                            android:clickable="true"
                             android:src="@drawable/add_vector_white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            android:clickable="true"/>
-
-
+                            app:layout_constraintTop_toTopOf="parent" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="25dp"
                         android:layout_gravity="left"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="30dp"
                         android:text="পরবর্তী চেকআপ এর সময়:"
                         android:textColor="@color/custom_promary_color"
                         android:textSize="18sp"
@@ -249,12 +246,15 @@
 
                     <RadioGroup
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/radioButton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
                             android:text="প্রতিদিন" />
 
                         <RadioButton
@@ -268,9 +268,6 @@
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
                         android:gravity="center"
                         android:orientation="horizontal">
 
@@ -278,11 +275,10 @@
                             android:id="@+id/textView5"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -292,11 +288,10 @@
                         <TextView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -306,11 +301,10 @@
                         <TextView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -320,11 +314,10 @@
                         <TextView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -334,11 +327,10 @@
                         <TextView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -348,11 +340,10 @@
                         <TextView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -365,7 +356,6 @@
                             android:background="@drawable/white_back_custom_primary_border"
                             android:clickable="true"
                             android:gravity="center"
-                            android:padding="5dp"
                             android:text="শনি"
                             android:textColor="@color/custom_promary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -379,8 +369,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="25dp"
                         android:layout_gravity="left"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="32dp"
                         android:text="নির্দিষ্ট সময় নির্ধারণ করুন:"
                         android:textColor="@color/custom_promary_color"
                         android:textSize="18sp"
@@ -389,15 +378,13 @@
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="32dp"
                         android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="50dp"
                             android:layout_height="25dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
@@ -410,7 +397,7 @@
                         <TextView
                             android:layout_width="50dp"
                             android:layout_height="25dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
@@ -423,7 +410,7 @@
                         <TextView
                             android:layout_width="50dp"
                             android:layout_height="25dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:clickable="true"
                             android:gravity="center"
@@ -445,7 +432,6 @@
 
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/edittext_shape__white_and_lessradious"
                             android:gravity="center"
@@ -531,9 +517,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="25dp"
                         android:layout_gravity="left"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="25dp"
-                        android:text="পরবর্তী চেকআপ এর সময়::"
+                        android:layout_marginTop="30dp"
+                        android:text="পরবর্তী চেকআপ এর সময়:"
                         android:textColor="@color/custom_promary_color"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -541,36 +526,37 @@
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="25dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
                         android:orientation="horizontal">
 
                         <Spinner
                             android:id="@+id/reportDateSpinnerId"
                             android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp" />
 
                         <Spinner
                             android:id="@+id/reportTimeSpinnerId"
                             android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="5dp"/>
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+
 
 
 </FrameLayout>

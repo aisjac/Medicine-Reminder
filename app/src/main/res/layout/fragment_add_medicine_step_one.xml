@@ -73,7 +73,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="26dp"
             android:background="@drawable/upper_round_shape"
             android:elevation="25dp"
             android:orientation="vertical"
@@ -81,16 +81,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
                     android:text="নতুন ঔষধ সংযুক্ত করুন"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -98,104 +99,92 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="28dp"
                     android:text="ঔষধের প্রকারভেদ" />
 
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="36dp"
                     android:scrollbars="none">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
+                        android:orientation="horizontal">
 
 
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
                             android:background="@drawable/white_custom_primary_color_rounded_border"
                             android:clickable="true"
                             android:gravity="center"
+                            android:src="@drawable/t_icon"
                             android:padding="5dp"
-                            android:text="ট্যাবলেট"
-                            android:textColor="@color/custom_promary_color" />
+                            android:layout_marginRight="20dp"/>
 
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:gravity="center"
+                            android:src="@drawable/c_icon"
+                            android:padding="5dp"
+                            android:text="ক্যাপসুল"/>
+
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:gravity="center"
+                            android:src="@drawable/s_icon"
+                            android:padding="5dp"
+                            android:text="সিরাপ"/>
+
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:gravity="center"
+                            android:src="@drawable/d_icon"
+                            android:padding="5dp"
+                            android:text="ড্রপ"/>
+
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:gravity="center"
+                            android:src="@drawable/cr_icon"
+                            android:padding="5dp"
+                            android:text="ইনজেকশন"/>
+
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/white_custom_primary_color_rounded_border"
+                            android:gravity="center"
+                            android:src="@drawable/inj_icon"
+                            android:padding="5dp"
+                            android:text="ক্রিম"/>
+
+                        <ImageButton
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="20dp"
                             android:background="@drawable/white_custom_primary_color_rounded_border"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="ক্যাপসুল"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="সিরাপ"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="ড্রপ"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="ইনজেকশন"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="ক্রিম"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="ইনহেলার"
-                            android:textColor="@color/custom_promary_color" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/white_custom_primary_color_rounded_border"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="পিল"
-                            android:textColor="@color/custom_promary_color" />
-
+                            android:src="@drawable/inh_icon"
+                            android:text="ইনহেলার"/>
 
                     </LinearLayout>
 
@@ -204,7 +193,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
                     android:orientation="vertical">
 
 
@@ -214,6 +204,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         app:boxStrokeWidth="0dp"
+                        android:gravity="start"
                         app:boxStrokeWidthFocused="0dp">
 
                         <EditText
@@ -221,9 +212,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
+                            android:gravity="start"
                             android:hint="ঔষধের নাম"
                             android:inputType="textPersonName"
-                            android:textSize="15sp" />
+                            android:textSize="16sp" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -241,88 +233,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="ঔষধের আইকন" />
-
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:scrollbars="none">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/tablet_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/capsul_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/sirap_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/drop_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/cream_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/injection_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="5dp"
-                            android:padding="5dp"
-                            android:src="@drawable/inhelar_icon" />
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:padding="5dp"
-                            android:src="@drawable/pill_icon" />
-
-
-                    </LinearLayout>
-
-
-                </HorizontalScrollView>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="32dp"
                     android:text="কালার" />
 
 
@@ -333,7 +244,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <View
@@ -380,8 +291,9 @@
                 android:id="@+id/textView6stepOneFragmentTVId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="45dp"
                 android:text="পরবর্তী"
                 android:textSize="14sp" />
 
