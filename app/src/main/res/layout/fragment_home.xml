@@ -259,14 +259,14 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_person_fab"
+            android:id="@+id/add_medicine_fabButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            app:fabSize="normal"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:fabSize="normal"
             app:srcCompat="@drawable/ic_baseline_add_24" />
 
 

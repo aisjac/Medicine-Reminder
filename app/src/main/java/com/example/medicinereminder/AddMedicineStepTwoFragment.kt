@@ -1,15 +1,16 @@
 package com.example.medicinereminder
 
 import android.app.DatePickerDialog
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Spinner
 import androidx.navigation.fragment.findNavController
-import com.example.medicinereminder.databinding.FragmentAddMedicineStepOneBinding
 import com.example.medicinereminder.databinding.FragmentAddMedicineStepTwoBinding
 import java.util.*
 
@@ -62,6 +63,9 @@ class AddMedicineStepTwoFragment : Fragment() {
         }
 
 
+        binding.addDoseButtonId.setOnClickListener {
+            customDialog()
+        }
 
 
             binding.textViewStepTwoFragmentTVId.setOnClickListener {
@@ -73,8 +77,17 @@ class AddMedicineStepTwoFragment : Fragment() {
 
 
 
-    fun showDialog() {
+    private fun customDialog() {
+        val dialog = Dialog(requireContext())
+        dialog.setContentView(R.layout.popup_for_medicine)
 
+        val yesBtn = dialog.findViewById(R.id.setMedicinePopupButtonId) as Button
+        yesBtn.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.addMedicineStepTwoFragment)
+            dialog.dismiss()
+        })
+
+        dialog.show()
 
     }
 

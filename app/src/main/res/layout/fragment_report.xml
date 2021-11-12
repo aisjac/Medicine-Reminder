@@ -214,6 +214,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageButton
+                            android:id="@+id/addReportButtonId"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:background="@drawable/custom_primary_background_obal"
