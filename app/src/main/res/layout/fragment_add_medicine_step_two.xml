@@ -18,7 +18,8 @@
         android:weightSum="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -78,11 +79,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="47dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/white"
             android:elevation="25dp"
-            android:text="ডোজ +"
+            android:text="@string/add_dose_buttonText"
             android:textColor="@color/custom_promary_color" />
 
         <androidx.core.widget.NestedScrollView
@@ -105,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:backgroundTint="@color/custom_promary_color"
                         android:gravity="center"
@@ -116,7 +117,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:background="@drawable/white_custom_primary_color_rounded_border"
                         android:backgroundTint="@color/custom_promary_color"
                         android:gravity="center"
@@ -138,15 +139,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="5dp"
                             android:src="@android:drawable/ic_lock_idle_alarm" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:backgroundTint="@color/custom_promary_color"
                             android:gravity="left"
                             android:text="৬:৫০ টা"
@@ -170,7 +171,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="মিলিগ্রাম (mg)" />
+                        android:text="@string/mg" />
 
                     <ImageView
                         android:layout_width="5dp"
@@ -187,7 +188,7 @@
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1"
                         android:src="@drawable/ic_baseline_add_24" />
 
@@ -208,7 +209,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:text="শুরুর তারিখ" />
+                        android:text="@string/starting_date_of_taking_medicine" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -253,7 +254,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:text="শেষের তারিখ" />
+                        android:text="@string/ending_date_of_taking_medicine" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -297,7 +298,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:padding="5dp"
-                        android:text="সময়কাল" />
+                        android:text="@string/duration_of_taking_medicine" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
@@ -310,7 +311,7 @@
                             android:id="@+id/addMedicineNumberSpinnerId"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:background="@drawable/white_custom_primary_color_rounded_border"
                             android:layout_weight="1" />
 
@@ -335,7 +336,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
-                    android:text="পরবর্তী"
+                    android:text="@string/add_medicine_step_one_next_button_text"
                     android:textSize="14sp" />
 
             </LinearLayout>

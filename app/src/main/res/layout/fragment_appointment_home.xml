@@ -96,7 +96,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
-                    android:text="মেডিকেল এপয়েন্টমেন্ট"
+                    android:text="@string/medical_appointment"
                     android:textStyle="bold"
                     android:textColor="@color/custom_promary_color"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -115,7 +115,7 @@
                     android:src="@drawable/add_vector_white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.979"
-                    app:layout_constraintStart_toEndOf="@+id/appCompatTextView"
+                    app:layout_constraintStart_toEndOf="@+id/medicalAppointmentTVId"
                     app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -146,7 +146,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
-            android:text="সাবমিট"
+            android:text="@string/submitButtonText"
             android:textSize="14sp" />
 
     </LinearLayout>

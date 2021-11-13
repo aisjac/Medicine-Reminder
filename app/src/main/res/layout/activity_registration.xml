@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:layout_marginTop="75dp"
-        android:text="মেডি হেল্প"
+        android:text="@string/appNameInBangla_MediHelp"
         android:textColor="@color/white"
         android:textSize="42sp"
         android:textStyle="bold"
@@ -39,9 +39,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:layout_marginTop="20dp"
-                android:text="একাউন্ট তৈরী করুন"
+                android:text="@string/create_account_textViewText"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
                 android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 android:elevation="25dp"
                 android:inputType="textPersonName"
                 app:boxStrokeWidth="0dp"
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_shape__white_and_lessradious"
-                    android:hint="আপনার নাম *"
+                    android:hint="@string/createAccount_namehint"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -70,7 +70,7 @@
                 android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 android:elevation="25dp"
                 android:inputType="textPersonName"
                 app:boxStrokeWidth="0dp"
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_shape__white_and_lessradious"
-                    android:hint="ফোন নম্বর *"
+                    android:hint="@string/createAccount_phoneHint"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -92,7 +92,7 @@
                 android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 android:elevation="25dp"
                 android:inputType="textPersonName"
                 app:boxStrokeWidth="0dp"
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_shape__white_and_lessradious"
-                    android:hint="পাসওয়ার্ড"
+                    android:hint="@string/createAccount_passwordHint"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -128,7 +128,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_shape__white_and_lessradious"
-                    android:hint="পাসওয়ার্ড নিশ্চিত করুন"
+                    android:hint="@string/createAccount_confPasshint"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -147,7 +147,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_shape_with_background_color"
-                android:text="সাইন আপ"
+                android:text="@string/signUp_buttonText"
                 android:textColor="@color/white" />
 
             <TextView
@@ -155,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="অথবা" />
+                android:text="@string/or" />
 
             <LinearLayout
                 android:layout_width="150dp"
@@ -168,7 +168,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:src="@drawable/fb" />
 
                 <ImageView
@@ -179,7 +179,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/tweeter" />
 
 
@@ -190,23 +190,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:gravity="right"
+                android:gravity="end"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="একাউন্ট আছে?" />
+                    android:text="@string/have_account" />
 
                 <TextView
                     android:id="@+id/signInKorunTVId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:clickable="true"
-                    android:text="সাইন ইন করুন"
+                    android:text="@string/doSignIn"
                     android:textColor="@color/custom_promary_color" />
 
 

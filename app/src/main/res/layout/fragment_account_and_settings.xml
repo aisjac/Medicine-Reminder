@@ -21,9 +21,9 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:text="সেটিংস"
+                android:text="@string/settingsText_fromSettingsPage"
                 android:textColor="@color/custom_promary_color"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -31,7 +31,7 @@
             <View
                 android:layout_width="80dp"
                 android:layout_height="2dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/custom_promary_color" />
 
@@ -53,14 +53,14 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/settings_account_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="একাউন্ট "
+                    android:layout_marginStart="10dp"
+                    android:text="@string/accountText_from_settingsPage"
                     android:textColor="@color/custom_promary_color"
                     android:textSize="18sp" />
 
@@ -70,7 +70,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/gray" />
 
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="এডিট প্রোফাইল"
+                    android:text="@string/editProfileTextViewText"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -124,8 +124,8 @@
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="চেঞ্জ পাসওয়ার্ড"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/changePasswordTextViewText_from_SettingsPage"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -154,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="ফেইসবুক"
+                    android:text="@string/facebook_from_settingsPage"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -192,14 +192,14 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/settings_notification_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="নোটিফিকেশন্স"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/notificationsText_from_settingsPage"
                     android:textColor="@color/custom_promary_color"
                     android:textSize="18sp" />
 
@@ -209,7 +209,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/gray" />
 
@@ -233,8 +233,8 @@
                     android:id="@+id/textView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="App নোটিফিকেশন্স"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/notificationToggleButtonText_from_settingsPage"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -264,8 +264,8 @@
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="ভাইব্রেশন"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/vibrationToggleButtonText_from_settingsPage"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -296,14 +296,14 @@
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:src="@drawable/settings_like_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="ফেইসবুক পেজটি লাইক করুন"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/likeOurFacebookPageText"
                         android:textColor="@color/custom_promary_color"
                         android:textSize="18sp" />
 
@@ -319,14 +319,14 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/settings_share_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="শেয়ার app"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/shareOurAppText_from_settingsPage"
                     android:textColor="@color/custom_promary_color"
                     android:textSize="18sp" />
 
@@ -346,14 +346,14 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/logout_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="লগ আউট"
+                android:layout_marginStart="10dp"
+                android:text="@string/logoutText"
                 android:textColor="@color/custom_promary_color"
                 android:textSize="18sp" />
 

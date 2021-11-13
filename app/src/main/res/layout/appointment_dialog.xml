@@ -24,7 +24,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textStyle="bold"
-            android:text="আপনি কি নিশ্চিত অ্যাপয়েন্টমেন্টটি মুছে ফেলতে চান?"
+            android:text="@string/appointmentDeleteDialog_headlineText"
             android:textColor="@color/custom_promary_color"
             android:textSize="14sp" />
 

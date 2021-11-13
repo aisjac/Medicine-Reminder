@@ -89,7 +89,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
-                android:text="মেডিকেল এপয়েন্টমেন্ট"
+                android:text="@string/medical_appointment"
                 android:textColor="@color/custom_promary_color"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -124,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="নাম"
+                        android:hint="@string/medical_appointment_nameHint"
                         android:inputType="textPersonName"
                         android:textSize="15sp" />
 
@@ -157,7 +157,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="কেন্দ্র"
+                        android:hint="@string/medicalAppointment_centerHint"
                         android:inputType="textPersonName"
                         android:textSize="15sp" />
 
@@ -199,7 +199,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
-                            android:hint="এপয়েন্টমেন্ট তারিখ"
+                            android:hint="@string/dateOfAppointment"
                             android:inputType="textPersonName"
                             android:textSize="15sp" />
 
@@ -299,7 +299,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="এপয়েন্টমেন্ট সতর্কবাণী"
+                        android:hint="@string/appointmentAlarm"
                         android:inputType="textPersonName"
                         android:textSize="15sp" />
 
@@ -343,7 +343,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
-            android:text="সেভ"
+            android:text="@string/saveButtonText"
             android:textSize="14sp" />
 
     </LinearLayout>

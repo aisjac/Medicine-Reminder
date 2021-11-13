@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
-                android:text="Md Aminul Islam"
+                android:text="@string/drawerHeaderProfileNameText"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"/>
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
-                android:text="shaheenmirja143@gmail.com"
+                android:text="@string/drawerHeaderProfileEmailText"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
 
